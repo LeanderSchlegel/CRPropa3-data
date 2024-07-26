@@ -88,7 +88,7 @@ def process(sigma, field, name):
 
     # tabulated energies, limit to energies where the interaction is possible
     Emin = getEmin(sigma, field)
-    E = np.logspace(9, 23, 281) * eV
+    E = np.logspace(6, 23, 17*20+1) * eV
     E = E[E > Emin]
     
     # -------------------------------------------
